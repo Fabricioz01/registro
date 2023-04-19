@@ -1,0 +1,119 @@
+/*modifica el cuerpo principal de html*/
+body {
+    /*cambia el color de fondo*/
+    background-color: #cddcdb;
+    /*permite darle un tipo de letra o por defecto del nav*/
+    font-family: Arial, sans-serif;
+    /*sirve para alinear este y los demas items que viene debajo de manera horizontal*/
+    display: flex;
+    /*sirve para alinear a la par que el contenedor principal*/
+    justify-content: center;
+    /*centra los elementos secundarios verticalmente*/
+    align-items: center;
+  }
+  /*hace referencia a la clase registro en html*/
+  .registro {
+    /*permite poder alinearlo de manera mas facil con otras propiedades*/
+    display: flex;
+    /*permite apilar cada elemento de forma igualitaria*/
+    flex-direction: column;
+    /*centra de manera horizontal*/
+    align-items: center;
+    /*sirve para centrarse respecto al contenedor*/
+    justify-content: center;
+    /*permite ajustar la altura de forma responsiva*/
+    height: 100vh;
+    /*permite ajustar el anchor de lo la clase registro*/
+    width: 400px;
+  }
+  /*referencia a la etiqueta h1 de html*/
+  h1 {
+    /*sirve para dar espacio entre el h1 y el elemento que está encima*/
+    margin-top: 100px;
+    /*da un espacio entre el elemento y la parte inferior*/
+    margin-bottom: 10px;
+  }
+  /*hace referencia a los h1 de la clase registro*/
+  .registro h1:hover {
+    /*le da una animacion de aumento en este caso un 50% mas*/
+    transform: scale(1.5);
+    /*permite darle un tiempo de animacion*/
+    transform: all 0,3 ease;
+  }
+  /*hace referencia a los formularios de html*/
+  form {
+    /*color de fondo*/
+    background-color: #fff;
+    /*sirve para dar un espacio alrededor de form en este caso 2 unidades relativas*/
+    padding: 2rem;
+    /*permite darle curvatura a las esquinas del form*/
+    border-radius: 35px;
+    /*permite darle color y posicionamiento a la sombre*/
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.2);
+    /*permite poner el porcentaje que ocupará rependiendo del contenedor en el que se encuentra*/
+    width: 100%;
+  }
+  /*hace referencia a los elementos label*/
+  label {
+    /*sirve para ocupar todo el espacio disponible horizontalmente haciendo que el siguiente elemento de un salto de linea*/
+    display: block;
+    /*establece una distancia con el elemento infeior*/
+    margin-bottom: 0.5rem;
+    /*le da al texto grosor y negrilla*/
+    font-weight: bold;
+  }
+  /*hacere referencia a los input de tipo text, email, pasword y date */
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="date"] {
+    /*ocupa todo el ancho disponible*/
+    display: block;
+    /*se define toda la altura disponible*/
+    width: 100%;
+    /*le da un margen alrededor del elementos*/
+    padding: 0.5rem;
+    /*define un espacio en la parte inferior del element*/
+    margin-bottom: 1rem;
+    /*define tamaño de letra*/
+    font-size: 1rem;
+    /*crea una curva en los bordes*/
+    border-radius: 5px;
+    /*elimina las lineas del borde para darle un estilo suave*/
+    border: none;
+    /*permite agregar el color de la sombra y posicionamiento*/
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    /*crea un efecto de movimineto*/
+    transition: transform 0.3s ease-in-out;
+  }
+  /*hace referencia a los inputs cuando se le de un clic sobre el*/
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="password"]:focus,
+  input[type="date"]:focus {
+    /*aumenta su tamaño un 10%*/
+    transform: scale(1.1);
+  }
+  /*referencia los input tipo submit*/
+  input[type="submit"] {
+    /*da color de fondo*/
+    background-color: #007bff;
+    /*le da color a la letra*/
+    color: #fff;
+    /*le quita el borde*/
+    border: none;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    /*cuando el cursor este sobre el input este cambiara de forma(cursor)*/
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+  }
+  /*referencia al input cuando se pasa el cursor sobre el*/
+  input[type="submit"]:hover {
+    /*cambia el color al input submit*/
+    background-color: #3dd44f;
+  }
+
+
+  

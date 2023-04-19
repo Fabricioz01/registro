@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Registro</title>
+    <link rel="stylesheet" href="registro.css">
+    <link rel="icon" href="uleam.icon">
+  </head>
+  <body>
+    <!--el div contenera el formulario con los inputs-->
+    <div class="registro">
+      <h1>Registroo</h1>
+      <!--el formulario servirá para enviar los datos a una bd en un futuro-->
+      <form>
+        <!--los labels contienen texto que indica que tipo de dato debe ingresar el user-->
+        <!--los inputs es donde se va a introducir el dato, ya sea de texto, numeri, correo, date o contraseña-->
+        <label for="nombre">Nombre</label>
+        <input type="text" id="nombre" >
+        
+        <label for="apellido">Apellido</label>
+        <input type="text" id="apellido" >
+        
+        <label for="correo">Correo Electrónico</label>
+        <input type="email" id="correo" >
+        
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" >
+        
+        <label for="confirmar-contraseña">Confirmar Contraseña</label>
+        <input type="password" id="confirmar-contraseña" >
+        
+        <label for="fecha de nacimiento">Fecha de nacimiento</label>
+        <input type="date" id="fecha-de-nacimiento" >
+
+        <label for="cedula">cedula</label>
+        <input type="text" id="cedula" >
+
+        <label for="numero">número telefónico</label>
+        <input type="text" id="numero" >
+
+        <center>
+          <input type="submit" value="Registrarse">
+        </center>  
+      </form>
+    </div>    
+  </body>
+  <!--referencia a el archivo de javascript-->
+  <script src="validacion.js"></script>
+</html>
